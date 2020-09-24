@@ -1,0 +1,376 @@
+@import "../styles/link";
+
+@mixin flexCenter {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+	height: 100%;
+    overflow: hidden;
+    transition: 2s ease-in-out;
+}
+body{
+    margin: 0;
+	padding: 0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+    font-family: 'Epilogue', sans-serif;
+    font-family: 'Jim Nightshade', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    width: auto;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    width: auto;
+    height: 3em;
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color: white;
+    p{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+/*********
+first container css
+*********/
+
+.first {
+    @include flexCenter();
+    box-sizing: border-box;
+	height: 100vh;
+	width: 100vw;
+	padding: 20vh;
+    &::before{	
+            content: "";
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            left: 0;
+            background: url("../images/font.jpg");
+            background-size: cover;
+            position: absolute;
+            z-index: -1;
+            transform: translateZ(-1px) scale(2);
+        }
+    }
+
+.site_desc{
+    width: 900px;
+    height: auto;
+    color: rgb(241, 232, 232);
+    text-align: center;
+    position: relative;
+    bottom: 3em;
+    h1{
+        font-size: 7rem;
+        font-family: 'Playfair Display', serif;
+        letter-spacing: -3px;
+        padding: 10px;
+    }
+    p{
+        font-size: 0.8rem;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        margin-top: -90px;
+        letter-spacing: 1px;
+        padding: 0px 80px 50px 80px;
+    }
+}
+
+
+/*********
+second container css
+*********/
+.second{
+    @include flexCenter();
+    height: 100vh;
+    width: 100vw;
+    padding-right: 50vh;
+    padding-bottom: 100vh;
+    background-color: rgb(0, 0, 0);
+	z-index: 2;
+}
+
+.sec{
+    width: 100vw;
+    height: 80vh;
+}
+.second_cont{
+    color: rgb(255, 255, 255);
+    width: 6em;
+    position: relative;
+    margin-left: 5rem;
+    p{
+        font-size: 1rem;
+        font-family: 'Epilogue', sans-serif;
+        text-transform: uppercase;
+    }
+}
+
+.secondcont_text{
+    color: rgb(255, 255, 255);
+    width: 35em;
+    margin: 150px auto;
+    h1{
+        font-size: 5rem;
+        font-weight: 100;
+        font-family: 'Epilogue', sans-serif;
+    }
+    p{
+        font-size: 1rem;
+        font-family: 'Epilogue', sans-serif;
+        line-height: 1rem;
+    }
+}
+
+/*********
+second container css end
+*********/
+
+/*********
+third container css
+*********/
+.third{
+    @include flexCenter();
+    height: 100vh;
+	width: 100vw;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 2;
+    &::before{	
+        content: "";
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        background: url("../images/godfather.jpg") center center;
+        background-size: cover;
+        position: absolute;
+        z-index: -1;
+        transform: translateZ(-1px) scale(2);
+    }
+}
+
+.thi{
+    width: 100vw;
+    height: 80vh;
+}
+.third_cont{
+    color: rgb(255, 255, 255);
+    width: auto;
+    position: relative;
+    margin-left: 5rem;
+    p{
+        font-size: 1rem;
+        font-family: 'Jim Nightshade', cursive;
+        text-transform: uppercase;
+    }
+}
+
+.thirdcont_text{
+    color: rgb(255, 255, 255);
+    width: 40em;
+    margin: 100px auto;
+    h1{
+        font-size: 6rem;
+        font-weight: 100;
+        font-family: 'Jim Nightshade', cursive;
+    }
+    p{
+        font-size: 1.5rem;
+        font-family: 'Jim Nightshade', cursive;
+        line-height: 1.5rem;
+    }
+}
+
+/*********
+forth container css
+*********/
+.fourth{
+    @include flexCenter();
+    height: 100vh;
+    width: 100vw;
+    padding-right: 50vh;
+    padding-top: 100vh;
+    padding-bottom: 100vh;
+    background-color: rgb(173, 138, 20);
+	z-index: 2;
+}
+
+.fou{
+    width: 100vw;
+    height: 80vh;
+}
+.fourth_cont{
+    color: rgb(255, 255, 255);
+    width: auto;
+    position: relative;
+    margin-left: 5rem;
+    p{
+        font-size: 1rem;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+    }
+}
+
+.fourthcont_text{
+    color: rgb(255, 255, 255);
+    width: 35em;
+    margin: 100px auto;
+    h1{
+        font-size: 5rem;
+        font-weight: 100;
+        font-family: 'Lato', sans-serif;
+    }
+    p{
+        font-size: 1rem;
+        font-family: 'Lato', sans-serif;
+        line-height: 1.2rem;
+    }
+}
+
+/*********
+forth container css end
+*********/
+
+/*********
+fifth container css end
+*********/
+.fifth{
+    @include flexCenter();
+    height: 100vh;
+	width: 100vw;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 2;
+    &::before{	
+        content: "";
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        background: url("../images/skate.jpg") center center;
+        background-size: cover;
+        position: absolute;
+        z-index: -1;
+        transform: translateZ(-1px) scale(2);
+    }
+}
+
+.fif{
+    width: 100vw;
+    height: 80vh;
+}
+.fifth_cont{
+    color: rgb(255, 255, 255);
+    width: auto;
+    position: relative;
+    margin-left: 5rem;
+    p{
+        font-size: 1rem;
+        font-family: 'Playfair Display', serif;
+        text-transform: uppercase;
+    }
+}
+
+.fifthcont_text{
+    color: rgb(255, 255, 255);
+    width: 40em;
+    margin: 100px auto;
+    h1{
+        font-size: 6rem;
+        font-weight: 100;
+        font-family: 'Playfair Display', serif;
+    }
+    p{
+        font-size: 1rem;
+        font-family: 'Playfair Display', serif;
+        line-height: 1.5rem;
+    }
+}
+
+/*********
+forth container css
+*********/
+.sixth{
+    @include flexCenter();
+    height: 100vh;
+    width: 100vw;
+    padding-right: 50vh;
+    padding-top: 100vh;
+    background-color: rgb(15, 148, 137);
+	z-index: 2;
+}
+
+.six{
+    width: 100vw;
+    height: 80vh;
+}
+.sixth_cont{
+    color: rgb(255, 255, 255);
+    width: auto;
+    position: relative;
+    margin-left: 5rem;
+    p{
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+    }
+}
+
+.sixthcont_text{
+    color: rgb(255, 255, 255);
+    width: 35em;
+    margin: 100px auto;
+    h1{
+        font-size: 5rem;
+        font-weight: 100;
+        font-family: 'Roboto', sans-serif;
+    }
+    p{
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.2rem;
+    }
+}
+
+/*********
+sixth container css end
+*********/
+
+footer{
+    width:auto;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 100;
+    background-color: black;
+    color: rgb(250, 250, 250);
+}
+
+
+
+
+
+
+

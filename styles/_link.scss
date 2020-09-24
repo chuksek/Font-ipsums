@@ -1,0 +1,8 @@
+a{
+    text-decoration-color: rgb(17, 101, 134);
+    color: rgb(28, 148, 196);;
+    &:hover{
+        text-decoration-color: white ;
+        color: white;
+    }
+}
